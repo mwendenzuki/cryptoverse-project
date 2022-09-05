@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space} from 'antd'
 
 import './App.css'
-import { Navbar, Homepage, Exchanges, Cryptocurrencies, CryptoDetails, News } from './components'
+import { Navbar, Homepage, Exchanges, Cryptocurrencies, CryptoDetails, News, Chat } from './components'
 
 const App = () => {
 
@@ -27,6 +27,8 @@ const App = () => {
                             <Route path="/crypto/:uuid" element={<CryptoDetails />} />
 
                             <Route path="/news" element={<News />} />
+
+                            <Route path="/chat" element={<Chat/>} />
                         </Routes>
 
                     </div>
