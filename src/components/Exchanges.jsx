@@ -1,4 +1,5 @@
 import React from 'react';
+import Chat from './Chat'
 /* import millify from 'millify';
 import { Collapse, Row, Col, Typography, Avatar } from 'antd';
 import HTMLReactParser from 'html-react-parser';
@@ -15,9 +16,15 @@ const Exchanges = () => {
   if (isFetching) return <Loader />; */
 
   return (
+  <>
     <div>
-      Exchanges
-    </div>
+        Exchanges
+      </div>
+      <div>
+        <Chat />
+      </div>
+  </>
+      
     /*<>
       <Row>
         <Col span={6}>Exchanges</Col>
